@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+<body>
+    <div id="containerLogin">
+        <div id="painelLogin">
+            <div id="painelHeader">
+                <div id="avatar">
+                    <img src="./images/avatar.png" alt="">
+                </div>
+                <h1 id="login">LOGIN</h1>
+                <p id="paragrafo">FAÇA LOGIN COM SEU E-MAIL E SENHA</p>
+            </div>
+            <div id="painelBody">
+                <form>
+                    <div id="formEmail">
+                        <label for="email">E-MAIL</label>
+                        <input type="text" id="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div id="formSenha">
+                        <label for="email">SENHA</label>
+                        <input type="password" id="senha" placeholder="Digite sua senha">
+                    </div>
+                    <button type="button" id="botao" onclick="efetuarLogin()" value="entrar">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="containerHome">
+        <div id="headerHome">
+            <button id="botaoLogout" type="button" onclick="efetuarLogout()" value="sair">LOGOUT</button>
+        </div>
+        <hr>
+        <div id="painelConteudo">
+            <div class="card" id="videoUm">
+                <iframe width="650" height="450" src="https://www.youtube.com/embed/lti52XzclrY" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p id="paragrafoUm">Nosso propósito é acelerar a entrada de pessoas desenvolvedoras de software no
+                    mercado de trabalho.
+                    Entendemos que para isso precisamos ser mais do que uma empresa que forma excelentes profissionais,
+                    precisamos ser a ponte que conecta as pessoas que querem mudar de vida com as empresas que
+                    necessitam de talentos para levar o seu negócio a um outro nível.
+
+                    Em agosto de 2019, quando participamos do Pitch Day do Feevale Techpark já era muito claro para nós
+                    que para potencializar esta conexão precisaríamos trabalhar focados em todos os atores, por isso
+                    definimos três linhas de atuação:
+
+                    Formação de hard e soft skills: Programas de excelência, totalmente aderentes à necessidade do
+                    mercado.
+                    Desenvolvimento de software: Nossa essência e nossa conexão com a formação alinhada ao que o mercado
+                    precisa.
+                    Recrutamento e seleção: O meio pelo qual alinhamos as expectativas de todas as partes.
+
+                    Trabalhamos para que mais e mais pessoas possam ingressar na carreira de desenvolvimento de software
+                    e que empresas possam crescer e tornar-se cada vez mais competitivas e inovadoras, vibramos muito
+                    quando conseguirmos contribuir para que isso aconteça.
+
+                    Nesta ainda curta, mas já exitosa trajetória, firmamos a cada dia o nosso entendimento máximo de que
+                    pessoas estão no centro de qualquer transformação.
+
+                    Acreditamos nas conexões, aprendemos a cada dia com nossos erros e acertos e temos a coragem e a
+                    humildade para assumi-los. Queremos fazer a diferença na vida de pessoas e organizações, isso é o
+                    que nos move.
+                </p>
+            </div>
+            <div class="card" id="videoDois">
+                <iframe width="650" height="450" src="https://www.youtube.com/embed/ClMZGJDtPEI" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p id="paragrafoDois">
+                    O Programa Starter é a formação de pessoas Desenvolvedoras Web Full Stack, no modelo bootcamp, com
+                    alto grau de empregabilidade.
+
+                    Para quem é o Programa?
+                    Embora aceitemos pessoas sem qualquer conhecimento prévio de programação, nosso programa é
+                    extremamente completo e formamos pessoas desenvolvedoras de software web full stack. Se você não tem
+                    nenhum conhecimento prévio, fique tranquilo, começaremos desde o básico e daremos toda a base
+                    necessária para você começar a trabalhar com as principais tecnologias do mercado. Se você já tem
+                    conhecimento, mas ainda não é full stack ou quer aprender a trabalhar com React, Node, Heroku, etc,
+                    vai curtir muito nosso programa!
+
+
+                    Como atuamos?
+                    Formamos desenvolvedores através de programas intensivos, focados no que o mercado precisa e
+                    conduzidos por mentores com expertise nas principais tecnologias demandadas hoje. Aqui é na prática!
+                    Você trabalhará com tecnologias utilizadas por empresas como Uber, Netflix e Facebook. Nossa
+                    metodologia é embasada no princípio de que o conhecimento acontece quando o que você aprende é
+                    aplicado, portanto irá vivenciar isto ao máximo, através da atuação em projetos reais.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
